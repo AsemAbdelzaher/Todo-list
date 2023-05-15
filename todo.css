@@ -1,0 +1,72 @@
+body {
+  margin-top: 50px;
+}
+h1 {
+  color: black;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, red, white, black);
+  /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: -20px;
+}
+.form {
+  background-color: rgb(176, 175, 183);
+  text-align: center;
+  padding: 40px;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+input[type="text"] {
+  width: 60%;
+  border-radius: 10px;
+  border-width: 0;
+  padding: 5px;
+  font-size: 30px;
+  outline: none;
+}
+input[type="submit"] {
+  background-color: lime;
+  color: rgb(121, 23, 23);
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  border-width: 0;
+  padding: 5px;
+}
+.tasks {
+  background-color: rgb(189, 19, 144);
+  width: 90%;
+  height: 80px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+/* responsive */
+@media screen and (max-width: 864px) {
+  input[type="submit"] {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  input[type="text"] {
+    width: 90%;
+    margin: 7px auto;
+  }
+  input[type="submit"] {
+    width: 45%;
+    margin: auto;
+  }
+}
